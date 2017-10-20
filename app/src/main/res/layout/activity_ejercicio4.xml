@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduce tus datos: "
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/lblCabecera"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:id="@+id/lblNombre"
+        android:layout_below="@+id/lblCabecera"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lblNombre"
+        android:layout_below="@id/lblCabecera"
+        android:layout_marginRight="15dp"
+        android:id="@+id/txtNombre"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellidos:"
+        android:id="@+id/lblApellidos"
+        android:layout_below="@+id/lblNombre"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNombre"
+        android:layout_toRightOf="@+id/lblApellidos"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/txtApellidos"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexo"
+        android:layout_below="@id/lblApellidos"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:id="@+id/lblSexo"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtApellidos"
+        android:layout_toRightOf="@id/lblSexo"
+        android:id="@+id/bgSexo">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/lblSexo"
+            android:layout_below="@id/lblApellidos"
+            android:text="Masculino"
+            android:id="@+id/rbMasculino"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rbMasculino"
+            android:layout_toRightOf="@id/lblSexo"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="5dp"
+            android:text="Femenino"
+            android:id="@+id/rbFemenino"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bgSexo"
+        android:text="Aficiones"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:id="@+id/lblAficiones"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkMusica"
+        android:layout_toRightOf="@+id/lblAficiones"
+        android:layout_below="@id/bgSexo"
+        android:text="Música"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkLectura"
+        android:layout_below="@+id/chkMusica"
+        android:layout_toRightOf="@id/lblAficiones"
+        android:text="Lectura"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deporta"
+        android:layout_toRightOf="@id/lblAficiones"
+        android:layout_below="@id/chkLectura"
+        android:id="@+id/chkDeporte"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkViajar"
+        android:text="Viajar"
+        android:layout_below="@id/chkDeporte"
+        android:layout_toRightOf="@id/lblAficiones"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkViajar"
+        android:layout_marginLeft="5dp"
+        android:text="enviar"
+        android:id="@+id/btnEnviar"/>
+
+
+</RelativeLayout>

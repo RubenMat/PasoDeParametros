@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="SUMA"
+        android:textSize="50dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/lblSuma"/>
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblSuma"
+        android:layout_marginLeft="90dp"
+        android:id="@+id/txtN1"
+        android:editable="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_toRightOf="@+id/txtN1"
+        android:layout_below="@+id/lblSuma"
+        android:layout_marginTop="15dp"
+        android:id="@+id/lblPlus"/>
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lblPlus"
+        android:layout_below="@+id/lblSuma"
+        android:id="@+id/txtN2"
+        android:editable="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:layout_below="@+id/lblSuma"
+        android:layout_toRightOf="@+id/txtN2"
+        android:layout_marginTop="15dp"
+        android:id="@+id/lblEquals"/>
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblSuma"
+        android:layout_toRightOf="@+id/lblEquals"
+        android:id="@+id/txtEquals"
+        android:inputType="number"
+        android:text="0"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtN1"
+        android:layout_marginLeft="80dp"
+        android:text="COMPROBAR RESULTADO"
+        android:id="@+id/btnComprobar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnComprobar"
+        android:text="PREGUNTAS CORRECTAS: 0"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/lblCorrectas"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblIncorrectas"
+        android:layout_below="@id/btnComprobar"
+        android:layout_toRightOf="@+id/lblCorrectas"
+        android:text="INCORRECTAS: 0"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"/>
+
+</RelativeLayout>
